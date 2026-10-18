@@ -53,7 +53,7 @@ mkShellNoCC {
         results:
 
         \`\`\`
-        $(${xpg.xpg}/bin/xpg -v "$pg_ver" pgbench -n -c 1 -T "$duration" -M simple -f "$file")
+        $(${xpg.xpg}/bin/xpg -v "$pg_ver" pgbench -n -c 1 -T "$duration" -M simple -f "$file" 2>&1)
         \`\`\`
         EOF
 
